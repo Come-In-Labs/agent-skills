@@ -1,0 +1,42 @@
+{
+  "name": "cil",
+  "version": "0.10.0",
+  "description": "Come In Labs engineering skills: software architecture, verified code and product audits, product analytics, public-copy tightening, persona walkthroughs, fun checks for games, and visual-hierarchy fixes.",
+  "author": {
+    "name": "Come In Labs",
+    "email": "support@comeinlabs.com",
+    "url": "https://github.com/Come-In-Labs"
+  },
+  "homepage": "https://github.com/Come-In-Labs/agent-skills",
+  "repository": "https://github.com/Come-In-Labs/agent-skills",
+  "keywords": [
+    "architecture",
+    "audit",
+    "fun-check",
+    "playtesting",
+    "game-balance",
+    "product-analytics",
+    "retention",
+    "cohorts",
+    "ab-testing",
+    "game-design",
+    "visual-hierarchy"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CIL Engineering Skills",
+    "shortDescription": "Build predictable software and audit it",
+    "longDescription": "Design predictable software architecture, run verified code and product audits, read product numbers, tighten public copy, walk features through as personas, check whether games are fun, and fix visual hierarchy.",
+    "developerName": "Come In Labs",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Come-In-Labs/agent-skills",
+    "defaultPrompt": [
+      "Audit this codebase and verify every finding",
+      "Design a predictable domain architecture for this system"
+    ]
+  }
+}

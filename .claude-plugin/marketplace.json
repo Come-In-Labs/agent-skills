@@ -1,0 +1,40 @@
+{
+  "name": "cil",
+  "description": "Come In Labs skills for software architecture, verified audits, product analytics and product quality.",
+  "owner": {
+    "name": "Come In Labs",
+    "email": "support@comeinlabs.com"
+  },
+  "plugins": [
+    {
+      "name": "cil",
+      "source": "./",
+      "version": "0.10.0",
+      "description": "Come In Labs engineering skills: software architecture, verified code and product audits, product analytics, public-copy tightening, persona walkthroughs, fun checks for games, and visual-hierarchy fixes.",
+      "keywords": [
+        "audit",
+        "untangle",
+        "over-engineering",
+        "dead-code",
+        "duplication",
+        "product-coherence",
+        "fun-check",
+        "playtesting",
+        "game-balance",
+        "pre-launch",
+        "cleanup",
+        "copywriting",
+        "ux-writing",
+        "microcopy",
+        "error-messages",
+        "release-notes",
+        "visual-hierarchy",
+        "typography",
+        "architecture",
+        "domain-modules",
+        "modularization",
+        "game-design"
+      ]
+    }
+  ]
+}
