@@ -14,6 +14,7 @@ human, and ranks findings by risk and reachability.
 | `cil:untangle` | structure | Is accidental complexity, duplicated plumbing, or dead structure making this harder than necessary? |
 | `cil:audit-code` | code | What is wrong, fake, dead, or duplicated, and is the finding real? |
 | `cil:audit-product` | product | Can a person reach an incoherent state, or does the product contradict itself? |
+| `cil:roast` | one feature, three critics | Does this change fit the codebase it lands in, who pays for it in six months, and what does the existing product do that it forgot or never tested? |
 | `cil:tighten-copy` | public copy | Does every user-facing sentence tell the reader what is true and what to do next, without implementation talk, filler, or repetition? |
 | `cil:ux-review` | lived use | Can real kinds of people find the feature, understand it, and come back to it over the days it spans, and do its promises match what they experience? |
 | `cil:fun-check` | fun | Will people enjoy this game or loop, which of its causes a simulation can measure, and what only real players' behaviour can settle? |
@@ -55,7 +56,7 @@ claude plugin install cil@cil
 ```
 
 Start a new session and invoke `/cil:architecture`, `/cil:audit`,
-`/cil:untangle`, `/cil:audit-code`, `/cil:audit-product`, `/cil:tighten-copy`,
+`/cil:untangle`, `/cil:audit-code`, `/cil:audit-product`, `/cil:roast`, `/cil:tighten-copy`,
 `/cil:ux-review`, `/cil:fun-check`, `/cil:fix-typo`, or `/cil:analytics`. Each
 takes an optional scope argument where appropriate.
 
