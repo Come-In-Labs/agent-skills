@@ -15,6 +15,7 @@ human, and ranks findings by risk and reachability.
 | `cil:audit-code` | code | What is wrong, fake, dead, or duplicated, and is the finding real? |
 | `cil:audit-product` | product | Can a person reach an incoherent state, or does the product contradict itself? |
 | `cil:roast` | one feature, three critics | Does this change fit the codebase it lands in, who pays for it in six months, and what does the existing product do that it forgot or never tested? |
+| `cil:cross-examine` | one decision, separate angles | Is this design decision right: who else writes the data it depends on, which way does it fail, what does the repo do elsewhere, how does it roll out, and does every competing option get the same hearing? |
 | `cil:tighten-copy` | public copy | Does every user-facing sentence tell the reader what is true and what to do next, without implementation talk, filler, or repetition? |
 | `cil:ux-review` | lived use | Can real kinds of people find the feature, understand it, and come back to it over the days it spans, and do its promises match what they experience? |
 | `cil:fun-check` | fun | Will people enjoy this game or loop, which of its causes a simulation can measure, and what only real players' behaviour can settle? |
@@ -56,7 +57,7 @@ claude plugin install cil@cil
 ```
 
 Start a new session and invoke `/cil:architecture`, `/cil:audit`,
-`/cil:untangle`, `/cil:audit-code`, `/cil:audit-product`, `/cil:roast`, `/cil:tighten-copy`,
+`/cil:untangle`, `/cil:audit-code`, `/cil:audit-product`, `/cil:roast`, `/cil:cross-examine`, `/cil:tighten-copy`,
 `/cil:ux-review`, `/cil:fun-check`, `/cil:fix-typo`, or `/cil:analytics`. Each
 takes an optional scope argument where appropriate.
 
