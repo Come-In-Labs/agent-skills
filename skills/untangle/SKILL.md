@@ -33,6 +33,8 @@ The job of this skill is to find those spots, prove which complexity is accident
 
 Mode B is the cheap insurance that the work you just shipped doesn't become next quarter's Mode A finding. When in doubt after a non-trivial change, run it.
 
+Mode B reads production code only. When the diff adds or changes tests, run `cil:trim-tests` on those files next: a spec that outgrows the code it covers is its finding, not this skill's.
+
 ## Workflow (Mode A)
 
 ### 1. Scope the hunt
