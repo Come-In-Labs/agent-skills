@@ -12,6 +12,7 @@ human, and ranks findings by risk and reachability.
 | `cil:architecture` | architecture | How should this system be organized so one domain teaches me how to navigate every other domain? |
 | `cil:audit` | full sweep | What do all audit lenses find after deduplication and verification? |
 | `cil:untangle` | structure | Is accidental complexity, duplicated plumbing, or dead structure making this harder than necessary? |
+| `cil:trim-tests` | tests | Does every test fail only for a reason someone cares about, or does it guard a removed thing, pin a trivial edit, or assert internals the behavior does not need? |
 | `cil:audit-code` | code | What is wrong, fake, dead, or duplicated, and is the finding real? |
 | `cil:audit-product` | product | Can a person reach an incoherent state, or does the product contradict itself? |
 | `cil:roast` | one feature, three critics | Does this change fit the codebase it lands in, who pays for it in six months, and what does the existing product do that it forgot or never tested? |
@@ -58,7 +59,7 @@ claude plugin install cil@cil
 ```
 
 Start a new session and invoke `/cil:architecture`, `/cil:audit`,
-`/cil:untangle`, `/cil:audit-code`, `/cil:audit-product`, `/cil:roast`, `/cil:cross-examine`, `/cil:visualize`, `/cil:tighten-copy`,
+`/cil:untangle`, `/cil:trim-tests`, `/cil:audit-code`, `/cil:audit-product`, `/cil:roast`, `/cil:cross-examine`, `/cil:visualize`, `/cil:tighten-copy`,
 `/cil:ux-review`, `/cil:fun-check`, `/cil:fix-typo`, or `/cil:analytics`. Each
 takes an optional scope argument where appropriate.
 
